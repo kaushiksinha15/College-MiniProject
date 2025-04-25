@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotels</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <marquee>Welcome to SB Resorts</marquee>
+        </div>
+        <div class="navbar">
+            <div>
+                <a href="destinations.html">
+                    <button>Destinations</button>
+                </a>
+            </div>
+            <button onclick="openModal()">Book a Room</button>
+            <a href="amenities.html">
+                <button>Amenities</button>
+            </a>
+            <a href="dining.html">
+                <button>Dining</button>
+            </a>
+        </div>
+        <div id="bookingModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Book a Room</h2>
+                <p>Number of rooms: <input type="number" id="numroom" min="1" oninput="validateInput(this)"></p>
+                <p>Number of people staying: <input type="number" id="people" min="1" oninput="validateInput(this)"></p>
+                <p>Select Room Type: 
+                    <select id="room">
+                        <option value="SingleBed">Single Bed - 10000 RS</option>
+                        <option value="DoubleBed">Double Bed - 18000 RS</option>
+                        <option value="Suite">Suite - 30000 RS</option>
+                    </select>
+                </p>
+                <p class="blink">Price: Starting from 10000 RS per night</p>
+                <button onclick="total()">Confirm Booking</button>
+            </div>
+        </div>
+        <div class="banner-container">
+            <h1>GLOBAL ICON OF INDIAN HOSPITALITY</h1>
+            <p>
+                Enter a realm of storied halls, sophisticated delights, and unrivalled indulgence. 
+                Immerse yourself in the grandeur of luxury at our exquisite palaces, hotels, resorts, and safaris.
+            </p>
+        </div>
+        <div class="luxury-section">
+            <div class="luxury-item">
+                <div class="text-overlay">
+                    <h2>TIMELESS</h2>
+                    <p>Embrace a timeless elegance that embodies sophistication and an unwavering commitment to refined excellence.</p>
+                </div>
+            </div>
+            <div class="luxury-item">
+                <div class="text-overlay">
+                    <h2>ICONIC</h2>
+                <p>Indulge in enduring distinction, extraordinary experiences and a legacy of unparalleled hospitality</p>
+                </div>
+            </div>
+            <div class="luxury-item">
+                <div class="text-overlay">
+                    <h2>AUTHENTIC</h2>
+                <p>Dive into a legacy of impeccable service where true refinement unfolds in every moment of your stay.</p>
+                </div>
+            </div>
+            <div class="luxury-item">
+                <div class="text-overlays">
+                    <h2>SOULFUL</h2>
+                <p>Cultivate cherished memories and embrace a distinctive sense of belonging through personalised, immersive experiences.</p>
+                </div>
+            </div>
+        </div>
+        <div class="offers-container">
+            <h1>- LATEST OFFERS -</h1>
+            <p>Dive into cool adventures at our picture-perfect destinations with SB Resorts.</p>
+            <div class="offers-grid">
+                <div class="offer-item">
+                    <img src="family.jpg" alt="Family Getaways">
+                    <div class="offer-text">
+                        <h2>FAMILY GETAWAYS - EARLY BIRD OFFER</h2>
+                        <a href="destinations.html">MORE ></a>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <img src="Bond.jpg" alt="Celebrating Our Bond">
+                    <div class="offer-text">
+                        <h2>CELEBRATING OUR BOND</h2>
+                        <a href="amenities.html">MORE ></a>
+                    </div>
+                </div>
+                <div class="offer-item">
+                    <img src="stay.jpg" alt="Stay A Bit Longer">
+                    <div class="offer-text">
+                        <h2>STAY A BIT LONGER</h2>
+                        <a href="dining.html">MORE ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>SUBSCRIBE FOR LATEST UPDATES</h2>
+                <input type="email" id="email" placeholder="Enter your email Address">
+                <button id="subscribe" onclick="messagePrompt()">SUBSCRIBE</button>
+            </div>
+            <div class="footer-section">
+                <h3>FOR BOOKINGS CONTACT</h3>
+                <p>7820887427</p>
+                <p>reservations@ihcltata.com</p>
+                <h3>CUSTOMER SUPPORT</h3>
+                <p>contactsb@sbresorts.com</p>
+                <p>website.feedback@sbresorts.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="destinations.html">Hotels</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="index.html">Timeless Weddings</a></li>
+                    <li><a href="destinations.html">Event Venues</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-icons">
+                <h3>CONNECT WITH US</h3>
+                <a href="https://www.facebook.com/"><img src="facebook.webp" alt="Facebook"></a>
+                <a href="https://x.com/?lang=en"><img src="x.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/"><img src="instagram.jpg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/"><img src="youtube.jpg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-brands">
+            <h3>OUR BRANDS</h3>
+            <p>SB | SAH | FOUR SEASONS </p>
+        </div>
+    </footer>
+    </body>
+</html>
